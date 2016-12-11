@@ -10,7 +10,7 @@ $(function() {
 			courses_completed.forEach(function(course) {
 				var course_div = $("<div></div>").attr('class', 'course')[0];
 				badges.append(course_div);
-				var h3 = $("<h3></h3>").html(course.title);
+				var h3 = $("<h3></h3>").html(course.title).attr('title', course.title);
 				course_div.append(h3[0]);
 				var img = $("<img />").attr('src', course.badge);
 				course_div.append(img[0]);
